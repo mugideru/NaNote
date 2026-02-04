@@ -32,7 +32,7 @@ To reproduce the 8KB binary, you need the MSVC compiler (cl.exe).
 
 ```cmd
 cl NaNote.c /DUNICODE /D_UNICODE /O1 /GS- /Fe:NaNote.exe /link /NODEFAULTLIB /ENTRY:entry /SUBSYSTEM:WINDOWS /MERGE:.rdata=.text kernel32.lib user32.lib gdi32.lib shell32.lib comdlg32.lib advapi32.lib
-
+```
 
 
 
@@ -71,3 +71,4 @@ NaNote は、純粋な Win32 API のみを使用し、C ランタイム (CRT) �
 cl NaNote.c /DUNICODE /D_UNICODE /O1 /GS- /Fe:NaNote.exe ^
 /link /NODEFAULTLIB /ENTRY:entry /SUBSYSTEM:WINDOWS /MERGE:.rdata=.text ^
 kernel32.lib user32.lib gdi32.lib shell32.lib comdlg32.lib advapi32.lib
+```
